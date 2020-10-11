@@ -1,0 +1,29 @@
+@import url('../article-card/__image/article-card__image.css');
+@import url('../article-card/__bookmark/article-card__bookmark.css');
+@import url('../article-card/__keyword/article-card__keyword.css');
+@import url('../article-card/__delete/article-card__delete.css');
+@import url('../article-card/__date/article-card__date.css');
+@import url('../article-card/__link/article-card__link.css');
+@import url('../article-card/__text/article-card__text.css');
+@import url('../article-card/__title/article-card__title.css');
+.article-card {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+@media screen and (min-width: 767px) {
+  .article-card {
+    margin: 0;
+    width: calc(100% - 4px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-card {
+    width: calc(100% - 8px);
+    min-height: 576px;
+  }
+}

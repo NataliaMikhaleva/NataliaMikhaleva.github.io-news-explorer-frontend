@@ -1,0 +1,15 @@
+.article-card__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px 15px 0 0;
+  min-width: 90%;
+  min-height: 196px;
+}
+
+@media screen and (min-width: 1440px) {
+  .article-card__image {
+    height: 272px;
+  }
+
+}

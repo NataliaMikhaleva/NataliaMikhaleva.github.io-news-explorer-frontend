@@ -1,0 +1,26 @@
+.lead__search-field {
+  width: 90%;
+  margin: 122px auto 0;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+@media screen and (min-width: 768px) {
+  .lead__search-field {
+    width: 58%;
+    height: 56px;
+    margin: auto;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .lead__search-field {
+    margin-bottom: 80px;
+    padding-bottom: 0;
+    width: 42%;
+  }
+}

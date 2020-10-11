@@ -1,0 +1,14 @@
+.article-card__link {
+    text-decoration-line: none;
+    width: 90%;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}

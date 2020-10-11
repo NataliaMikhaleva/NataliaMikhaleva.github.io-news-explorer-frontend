@@ -1,0 +1,18 @@
+.search-results__content-subtitle {
+  margin: 0px auto 24px;
+  background: #F5F6F7;
+}
+
+@media screen and (min-width: 767px) {
+  .search-results__content-subtitle {
+    width: 90%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .search-results__content-subtitle {
+    margin: 80px auto 64px;
+    padding: 0;
+  }
+}

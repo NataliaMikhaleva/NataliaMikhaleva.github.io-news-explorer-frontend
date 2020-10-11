@@ -1,0 +1,11 @@
+
+
+.header__bar1 {
+  width: 16px;
+  height: 2px;
+  background-color:white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+

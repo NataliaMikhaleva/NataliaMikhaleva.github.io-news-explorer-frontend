@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News-explorer</title>
+    <!-- <link rel="icon" href="/src/images/favicon.svg" type="image/x-icon"> не работает -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="../src/fonts/fonts.css">
+    <link rel=" import " href="../src/articles.html ">
+    <link rel="stylesheet " href="../src/styles/style.css ">
+    <meta name="description " content="Приложение для поиска новостей ">
+    <meta name="author " content="Наталья Михалёва ">
+</head>
+
+<body>
+    <div class='page'>
+        <div class='lead'>
+            <div class='header'>
+              <div class="header__content">
+                <div class='header__heading'>
+                    <p class='header__subtitle'>NewsExplorer</p>
+                    <div class='header__icon'>
+                        <div class='header__bar1'></div>
+                        <div class='header__bar2'></div>
+                    </div>
+                </div>
+                <div class='header__nav'>
+                    <a class='header__link' href='./index.html '>Главная</a>
+                    <!-- <a class=' header__link' href='./articles.html '>Сохраненные статьи</a> -->
+                    <button class='button header__button'>Авторизоваться</button>
+                </div>
+              </div>
+            </div>
+            <h1 class='lead__title'>Что творится в мире?</h1>
+            <p class='content-paragraph lead__content-paragraph'>Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+            <form class='lead__search-field'>
+                <input type='text' class='lead__field' placeholder='Политика'></input>
+                <button class='button lead__button'>Искать</button>
+            </form>
+        </div>
+        <main class='content'>
+            <section class='search-results'>
+                <h2 class='content-subtitle search-results__content-subtitle'>Результаты поиска</h2>
+                <div class='cards-container'>
+                    <div class='article-card'>
+                        <div class='article-card__image' style='background-image: url(../src/images/image_08.jpg) '>
+                            <button class="article-card__bookmark"></button>
+                        </div>
+                        <p class='article-card__date'>2 августа, 2019</p>
+                        <p class='article-card__title'>Национальное достояние – парки</p>
+                        <p class='article-card__text'>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
+                        <a class='article-card__link' href="#" target="_blank">ЛЕНТА.РУ</a>
+                    </div>
+                    <div class='article-card'>
+                        <div class='article-card__image' style='background-image: url(../src/images/image_06.jpg)'>
+                            <button class="article-card__bookmark"></button>
+                        </div>
+                        <p class='article-card__date'>2 августа, 2019</p>
+                        <p class='article-card__title'>Национальное достояние – парки</p>
+                        <p class='article-card__text'>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
+                        <a class='article-card__link' href="# " target="_blank">МЕДУЗА</a>
+                    </div>
+                    <div class='article-card'>
+                        <div class='article-card__image' style='background-image: url(../src/images/image_07.jpg)'>
+                            <button class="article-card__bookmark"></button>
+                        </div>
+                        <p class='article-card__date'>2 августа, 2019</p>
+                        <p class='article-card__title'>Национальное достояние – парки</p>
+                        <p class='article-card__text'>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
+                        <a class='article-card__link' href="#" target="_blank">РИА</a>
+                    </div>
+                </div>
+                <button class='button search-results__button'>Показать еще</button>
+            </section>
+            <section class="preloader">
+              <i class="circle-preloader"></i>
+              <p class="preloader__text">Идет поиск новостей...</p>
+            </section>
+            <section class='author'>
+              <img class='author__photo' src='https://cdn.pixabay.com/photo/2016/01/20/13/05/cat-1151519_960_720.jpg' alt='фото автора'>
+              <div class="author__content">
+                <h2 class='author__title'>Об авторе</h2>
+                <p class='author__info'>Наталья Михалёва. Студентка Яндекс.Практикума на факультете веб-разработки.</p>
+              </div>
+            </section>
+            <section class="no-results">
+              <div class="no-results__image"></div>
+              <h3 class="no-results__title">Ничего не найдено</h3>
+              <p class="no-results__text">К сожалению по вашему запросу ничего не найдено.</p>
+            </section>
+            <footer class="footer">
+                <div class='footer__columns'>
+                    <ul class='footer__info'>
+                        <li class='footer__text'>Главная</li>
+                        <li class='footer__text'>Яндекс.Практикум</li>
+                    </ul>
+                    <ul class='footer__links'>
+                        <li>
+                            <a class='footer__link' href='https://github.com/NataliaMikhaleva' target="_blank "><img class='footer__social-icon ' src='../src/images/Vector.jpg '></a>
+                        </li>
+                        <li>
+                            <a class='footer__link' href='https://www.facebook.com' target="_blank "><img class='footer__social-icon ' src='../src/images/Vector1.jpg '></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer__copyright">&copy; 2020 Supersite, Powered by News API</p>
+            </footer>
+
+            <!-- попап для входа на сайт -->
+            <div class='popup popup_entrance'>
+              <div class= 'popup__content'>
+                <h3 class='popup__title'>Вход</h3>
+                <form class='popup__form' name='authorization'>
+                    <div class='popup__input-container'>
+                        <span id='email-message' class='popup__input-message'>Email</span>
+                        <input type='email' name='useremail' class='popup__input' required placeholder="Введите почту ">
+                    </div>
+                    <div class='popup__input-container'>
+                        <span id='username-message' class='popup__input-message'>Пароль</span>
+                        <input type='text' name='username' class='popup__input ' required placeholder="Введите пароль ">
+                    </div>
+                    <button class='button popup__button'>Войти</button>
+                </form>
+                <p class= 'popup__text'>или <span class= 'popup__accent'>Зарегистрироваться</span></p>
+              </div>
+            </div>
+
+            <!-- попап для регистрации на сайте -->
+            <div class='popup popup_reg'>
+              <div class= 'popup__content'>
+                <h3 class='popup__title'>Регистрация</h3>
+                <form class='popup__form' name='authorization'>
+                    <div class='popup__input-container'>
+                        <span id='email-message' class='popup__input-message'>Email</span>
+                        <input type='email ' name='useremail ' class='popup__input ' required placeholder="Введите почту ">
+                    </div>
+                    <div class='popup__input-container'>
+                        <span id='userpassword-message' class='popup__input-message'>Пароль</span>
+                        <input type='text' name='userpassword' class='popup__input ' required placeholder="Введите пароль">
+                    </div>
+                    <div class='popup__input-container'>
+                      <span id='username-message' class='popup__input-message'>Имя</span>
+                      <input type='text' name='username' class='popup__input' required placeholder="Введите свое имя">
+                  </div>
+                    <button class='button popup__button popup__button_reg'>Зарегистрироваться</button>
+                </form>
+                <p class= 'popup__text'>или <span class= 'popup__accent'>Войти</span></p>
+              </div>
+            </div>
+
+            <div class="popup popup_reg_success">
+              <div class= 'popup__content popup__content_reg_success'>
+                <p class="popup__message">Пользователь успешно зарегистрирован!</p>
+                <p class="popup__accent">Войти</p>
+              </div>
+            </div>
+        </main>
+    </div>
+    <script>
+      const headerButton = document.querySelector('.header__button');
+      const headerNav = document.querySelector('.header__nav');
+      const popupEntrance = document.querySelector('.popup_entrance');
+      const popupReg = document.querySelector('.popup_reg');
+      const popupAccent = document.querySelector('.popup__accent');
+
+      headerButton.addEventListener('click', (openpopupEntrance) => {
+        popupEntrance.classList.add('popup_is_opened');
+      });
+      popupAccent.addEventListener('click', (openPopupReg) => {
+        popupReg.classList.add('popup_is_opened');
+      });
+    </script>
+    <script src=" <%=htmlWebpackPlugin.files.js %>"></script>
+</body>
+
+</html>

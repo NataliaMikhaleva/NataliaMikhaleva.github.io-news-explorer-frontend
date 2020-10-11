@@ -1,0 +1,17 @@
+@import url('./__title/lead__title.css');
+@import url('./__paragraph/lead__paragraph.css');
+@import url('./__content-paragraph/lead__content-paragraph.css');
+@import url('./__text/lead__text.css');
+@import url('./__search-field/lead__search-field.css');
+@import url('./__field/lead__field.css');
+@import url('./__button/lead__button.css');
+@import url('./__content-subtitle/lead__content-subtitle.css');
+
+.lead {
+    width: 100%;
+    background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}

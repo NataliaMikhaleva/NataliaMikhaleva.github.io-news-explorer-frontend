@@ -1,0 +1,25 @@
+.search-results__button {
+  background-color: white;
+  color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 767px) {
+  .search-results__button {
+    width: 240px;
+    margin: 22px auto 40px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .search-results__button {
+    width: 288px;
+    margin: 56px auto 80px;
+  }
+}

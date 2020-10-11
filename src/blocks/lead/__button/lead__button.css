@@ -1,0 +1,18 @@
+
+@media screen and (min-width: 768px) {
+  .button.lead__button {
+    position: absolute;
+    z-index: 1;
+    width: 160px;
+    height: 56px;
+    margin-top: 0;
+    right: 156px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .button.lead__button {
+    right: 400px;
+  }
+}

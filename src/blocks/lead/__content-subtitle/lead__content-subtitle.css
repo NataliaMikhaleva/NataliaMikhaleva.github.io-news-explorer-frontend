@@ -1,0 +1,9 @@
+.lead__content-subtitle {
+  margin: 0px auto 24px;
+}
+
+@media screen and (min-width: 767px) {
+  .lead__content-subtitle {
+    margin-left: 40px;
+  }
+}

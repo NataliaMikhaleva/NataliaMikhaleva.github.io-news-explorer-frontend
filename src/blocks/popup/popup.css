@@ -1,0 +1,40 @@
+@import url('../popup/__button/popup__button.css');
+@import url('../popup/__content/popup__content.css');
+@import url('../popup/__content/_reg/popup__content_reg_success.css');
+@import url('../popup/__input-container/popup__input-container.css');
+@import url('../popup/__form/popup__form.css');
+@import url('../popup/__input-message/popup__input-message.css');
+@import url('../popup/__input/popup__input.css');
+@import url('../popup/__title/popup__title.css');
+@import url('../popup/__text/popup__text.css');
+@import url('../popup/__accent/popup__accent.css');
+@import url('../popup/_is_opened/popup_is_opened.css');
+@import url('../popup/_reg/popup_reg_success.css');
+@import url('../popup/__message/popup__message.css');
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 560px;
+    margin-top: 56px;
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+    display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .popup {
+    margin-top: 0;
+    border-radius: none;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,31 @@
+.header__nav {
+    width: 90%;
+    min-height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration-line: none;
+    background: black;
+    position: absolute;
+    top: 56px;
+    z-index: 1;
+    /* display: none; */
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    min-height: 66px;
+    width: 35%;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    background: none;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header__nav {
+    width: 22%;
+  }
+}
