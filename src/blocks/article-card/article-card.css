@@ -6,12 +6,25 @@
 @import url('../article-card/__link/article-card__link.css');
 @import url('../article-card/__text/article-card__text.css');
 @import url('../article-card/__title/article-card__title.css');
+@import url('../article-card/__main/article-card__main.css');
+@import url('../article-card/__buttons/article-card__buttons.css');
+@import url('../article-card/__delete-buttons/article-card__delete-buttons.css');
+@import url('../article-card/__delete-info/article-card__delete-info.css');
+
 .article-card {
     width: 90%;
     margin: auto;
     margin-bottom: 10px;
     background: #FFFFFF;
     border-radius: 15px;
+    text-decoration-line: none;
+    position: relative;
+}
+
+@media screen and (min-width: 425px) {
+  .article-card {
+    width: calc(100% - 4px);
+  }
 }
 
 @media screen and (min-width: 767px) {

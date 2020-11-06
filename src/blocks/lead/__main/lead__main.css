@@ -1,0 +1,18 @@
+.lead__main {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 767px) {
+  .lead__main {
+    width: 59%;
+    margin-top: 38px;
+    margin-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .lead__main {
+    margin-top: 80px;
+    margin-bottom: 64px;
+  }
+}

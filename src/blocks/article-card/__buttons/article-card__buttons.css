@@ -1,0 +1,9 @@
+.article-card__buttons {
+   width: 90%;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   z-index: 1;
+   top: 24px;
+}

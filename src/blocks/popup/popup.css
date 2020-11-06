@@ -11,6 +11,7 @@
 @import url('../popup/_is_opened/popup_is_opened.css');
 @import url('../popup/_reg/popup_reg_success.css');
 @import url('../popup/__message/popup__message.css');
+@import url('../popup/__close/popup__close.css');
 
 
 .popup {
@@ -19,9 +20,12 @@
     left: 0;
     width: 100%;
     min-height: 560px;
-    margin-top: 56px;
-    border-radius: 10px 10px 0 0;
-    background-color: white;
+    /* margin-top: 56px; */
+    height: 100%;
+    background-color: transparent;
+
+    /* border-radius: 10px 10px 0 0; */
+    /* background-color: white; */
     display: flex;
     align-items: flex-start;
     justify-content: center;

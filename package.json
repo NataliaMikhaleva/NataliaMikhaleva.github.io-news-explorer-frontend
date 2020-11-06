@@ -4,8 +4,8 @@
   "description": "Фронтенд для проекта с новостями.",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && webpack --mode production",
-    "dev": "webpack-dev-server --mode development --open --watch",
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -17,13 +17,14 @@
   "bugs": {
     "url": "https://github.com/NataliaMikhaleva/news-explorer-frontend/issues"
   },
-  "homepage": "https://github.com/NataliaMikhaleva/news-explorer-frontend#readme",
+  "homepage": "https://github.com/NataliaMikhaleva/news-explorer-frontend.git",
   "devDependencies": {
     "@babel/cli": "^7.11.6",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "autoprefixer": "^10.0.0",
     "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
     "css-loader": "^4.3.0",
     "cssnano": "^4.1.10",
     "file-loader": "^6.1.0",

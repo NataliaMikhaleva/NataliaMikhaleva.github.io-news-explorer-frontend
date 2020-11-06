@@ -1,12 +1,13 @@
 .search-results__content-subtitle {
-  margin: 0px auto 24px;
+  margin: auto;
   background: #F5F6F7;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 425px) {
   .search-results__content-subtitle {
     width: 90%;
     text-align: left;
+    margin: 0 auto;
   }
 }
 
