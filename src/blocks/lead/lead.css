@@ -6,12 +6,20 @@
 @import url('./__field/lead__field.css');
 @import url('./__button/lead__button.css');
 @import url('./__content-subtitle/lead__content-subtitle.css');
+@import url('./__main/lead__main.css');
 
 .lead {
     width: 100%;
     background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg);
     background-size: cover;
+
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .lead {
+    background-image: url(../../images/georgia-de-lotz--UsJoNxLaNo-unsplash\ \(2\).jpg);
+  }
 }

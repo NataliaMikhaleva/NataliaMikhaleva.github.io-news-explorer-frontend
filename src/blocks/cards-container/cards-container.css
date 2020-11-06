@@ -2,13 +2,39 @@
     width: 100%;
     margin: auto;
     background: #F5F6F7;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 425px) {
+  .cards-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 100% - 4px; */
+    grid-row-gap: 8px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
   .cards-container {
     width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    /* grid-template-columns: 100% - 4px; */
+    grid-row-gap: 8px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cards-container {
+    grid-row-gap: 16px;
+    padding-top: 62px;
+    padding-bottom: 62px;
   }
 }

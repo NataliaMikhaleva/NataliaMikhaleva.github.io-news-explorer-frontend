@@ -9,3 +9,11 @@
   top: 16px;
   left: 16px;
 }
+
+@media screen and (min-width: 1440px) {
+  .article-card__keyword {
+    top: 24px;
+    right: 24px;
+  }
+
+}

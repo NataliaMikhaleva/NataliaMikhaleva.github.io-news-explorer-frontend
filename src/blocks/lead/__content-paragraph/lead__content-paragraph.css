@@ -1,17 +1,17 @@
 .lead__content-paragraph {
-  margin: auto;
+  /* margin: auto; */
 }
 
 @media screen and (min-width: 767px) {
   .lead__content-paragraph {
-    margin: 0 156px 48px 160px;
+    margin: 0;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .lead__content-paragraph {
-    margin-left: 416px;
-    margin-bottom: 64px;
+    /* margin-left: 416px;
+    margin-bottom: 64px; */
 
   }
 }

@@ -13,6 +13,11 @@
   right: 16px;
 }
 
-.article-card__bookmark:hover {
-  
+.article-card__bookmark_active{
+  background: url(../../../images/bookmark-active.svg);
 }
+
+.article-card__bookmark:hover {
+  background-image: url(../../../images/bookmark-hover.svg);
+}
+

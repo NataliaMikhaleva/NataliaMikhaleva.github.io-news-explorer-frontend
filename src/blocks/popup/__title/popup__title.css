@@ -1,4 +1,6 @@
 .popup__title {
+  width: 90%;
+  margin: auto;
   margin-top: 16px;
   margin-bottom: 22px;
   font-family: Roboto;
