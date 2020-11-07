@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News-explorer-articles</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="../src/fonts/fonts.css">
-    <link rel=" stylesheet " href="../src/styles/style.css ">
-    <meta name="description " content="Страница, где хранятся сохраненные пользователем заметки ">
-    <meta name="author " content="Наталья Михалёва ">
+    <!-- <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="../src/fonts/fonts.css"> -->
+    <!-- <link rel=" stylesheet " href="../src/styles/style.css "> -->
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+    <meta name="description " content="Страница, где хранятся сохраненные пользователем заметки">
+    <meta name="author " content="Наталья Михалёва">
 </head>
 
 <body>
@@ -37,64 +38,82 @@
         </div>
         <div class='cards-container'>
 
-            <a class='article-card' href="#" target="_blank">
+            <div class='article-card'><a class='article-card__link' href="#" target="_blank"></a>
                 <div class='article-card__main'>
-                  <img class='article-card__image' src='../src/images/image_08.jpg' alt='картинка статьи'>
-                    <!-- <div class='article-card__buttons'> -->
+                  <img class='article-card__image' src='<%=require('./images/image_08.jpg')%>' alt='картинка статьи'>
                       <button class='article-card__keyword'>Природа</button>
                       <div class='article-card__delete-buttons'>
                         <button class='article-card__delete-info'>Убрать из сохранённых</button>
                         <button class="article-card__delete"></button>
-                      <!-- </div> -->
                     </div>
                 </div>
                 <p class='article-card__date'>2 августа, 2019</p>
                 <p class='article-card__title'>Национальное достояние – парки</p>
                 <p class='article-card__text'>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-                <p class='article-card__link'>ЛЕНТА.РУ</p>
-              </a>
+                <p class='article-card__source'>ЛЕНТА.РУ</p>
+            </div>
 
-            <div class='article-card'>
-                <div class='article-card__image' style='background-image: url(../src/images/image_01.jpg)'>
-                    <button class="article-card__delete "></button>
+            <div class='article-card'><a class='article-card__link' href="#" target="_blank"></a>
+              <div class='article-card__main'>
+                <img class='article-card__image' src='<%=require('./images/image_01.jpg')%>' alt='картинка статьи'>
                     <button class='article-card__keyword'>Природа</button>
-                </div>
+                    <div class='article-card__delete-buttons'>
+                      <button class='article-card__delete-info'>Убрать из сохранённых</button>
+                      <button class="article-card__delete"></button>
+                  </div>
+              </div>
                 <p class='article-card__date'>2 августа, 2019</p>
                 <p class='article-card__title'>Национальное достояние – парки</p>
                 <p class='article-card__text'>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-                <a class='article-card__link' href="#" target="_blank">ЛЕНТА.РУ</a>
+                <p class='article-card__source'>ЛЕНТА.РУ</p>
             </div>
-            <div class='article-card'>
-                <div class='article-card__image' style='background-image: url(../src/images/image_05.jpg)'>
-                    <button class="article-card__delete "></button>
+
+            <div class='article-card'><a class='article-card__link' href="#" target="_blank"></a>
+              <div class='article-card__main'>
+                <img class='article-card__image' src='<%=require('./images/image_05.jpg')%>' alt='картинка статьи'>
                     <button class='article-card__keyword'>Тайга</button>
-                </div>
+                    <div class='article-card__delete-buttons'>
+                      <button class='article-card__delete-info'>Убрать из сохранённых</button>
+                      <button class="article-card__delete"></button>
+                  </div>
+              </div>
                 <p class='article-card__date'>2 августа, 2019</p>
                 <p class='article-card__title'>Национальное достояние – парки</p>
                 <p class='article-card__text'>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-                <a class='article-card__link' href="# " target="_blank">ЛЕНТА.РУ</a>
+                <p class='article-card__source'>ЛЕНТА.РУ</p>
             </div>
-            <div class='article-card'>
-                <div class='article-card__image' style='background-image: url(../src/images/image_06.jpg)'>
-                    <button class="article-card__delete "></button>
+
+            <div class='article-card'><a class='article-card__link' href="#" target="_blank"></a>
+              <div class='article-card__main'>
+                <img class='article-card__image' src='<%=require('./images/image_06.jpg')%>' alt='картинка статьи'>
                     <button class='article-card__keyword'>Парки</button>
-                </div>
+                    <div class='article-card__delete-buttons'>
+                      <button class='article-card__delete-info'>Убрать из сохранённых</button>
+                      <button class="article-card__delete"></button>
+                  </div>
+              </div>
                 <p class='article-card__date'>2 августа, 2019</p>
                 <p class='article-card__title'>Национальное достояние – парки</p>
                 <p class='article-card__text'>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-                <a class='article-card__link' href="# " target="_blank">ЛЕНТА.РУ</a>
+                <p class='article-card__source'>ЛЕНТА.РУ</p>
             </div>
-            <div class='article-card'>
-                <div class='article-card__image' style='background-image: url(../src/images/image_01.jpg)'>
-                    <button class="article-card__delete "></button>
+
+            <div class='article-card'><a class='article-card__link' href="#" target="_blank"></a>
+              <div class='article-card__main'>
+                <img class='article-card__image' src='<%=require('./images/image_01.jpg')%>' alt='картинка статьи'>
                     <button class='article-card__keyword'>Фотография</button>
-                </div>
+                    <div class='article-card__delete-buttons'>
+                      <button class='article-card__delete-info'>Убрать из сохранённых</button>
+                      <button class="article-card__delete"></button>
+                  </div>
+              </div>
                 <p class='article-card__date'>2 августа, 2019</p>
                 <p class='article-card__title'>Национальное достояние – парки</p>
                 <p class='article-card__text'>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков...</p>
-                <a class='article-card__link' href="#" target="_blank">ЛЕНТА.РУ</a>
+                <p class='article-card__source'>ЛЕНТА.РУ</p>
             </div>
         </div>
+
         <footer class="footer ">
             <div class='footer__columns'>
                 <ul class='footer__info'>
@@ -103,14 +122,15 @@
                 </ul>
                 <ul class='footer__links'>
                     <li>
-                        <a class='footer__link' href='https://github.com/NataliaMikhaleva' target="_blank"><img class='footer__social-icon' src='../src/images/Vector.jpg' alt='иконка github'></a>
+                        <a class='footer__link' href='https://github.com/NataliaMikhaleva' target="_blank"><img class='footer__social-icon' src='<%=require('./images/giticon.jpg')%>' alt='иконка github'></a>
                     </li>
                     <li>
-                        <a class='footer__link' href='https://www.facebook.com' target="_blank"><img class='footer__social-icon' src='../src/images/Vector1.jpg' alt='иконка facebook'></a>
+                        <a class='footer__link' href='https://www.facebook.com' target="_blank"><img class='footer__social-icon' src='<%=require('./images/facebookicon.jpg')%>' alt='иконка facebook'></a>
                     </li>
                 </ul>
             </div>
             <p class="footer__copyright ">&copy; 2020 Supersite, Powered by News API</p>
         </footer>
     </div>
+    <script src="<%=htmlWebpackPlugin.files.js %>"></script>
 </body>

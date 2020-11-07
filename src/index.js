@@ -1,4 +1,4 @@
-//import "./styles/style.css";
+import "../src/styles/style.css";
 
 // импорт модулей
 import MainApi from './js/api/MainApi.js';
@@ -12,7 +12,6 @@ const headerIcon = document.querySelector('.header__icon');
 const leadButton = document.querySelector('.lead__button');
 
 //создаем экземпляр класса NewsCardList
-
 
 
 const popupAccent = document.querySelector('.popup__accent');

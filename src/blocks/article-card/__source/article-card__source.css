@@ -1,0 +1,20 @@
+.article-card__source {
+    text-decoration-line: none;
+    width: 90%;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+    margin-top: 0;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .article-card__source{
+    margin-bottom: 24px;
+  }
+}

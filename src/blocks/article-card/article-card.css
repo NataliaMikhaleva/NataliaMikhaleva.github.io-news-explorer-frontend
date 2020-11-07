@@ -1,9 +1,10 @@
 @import url('../article-card/__image/article-card__image.css');
+@import url('../article-card/__link/article-card__link.css');
 @import url('../article-card/__bookmark/article-card__bookmark.css');
 @import url('../article-card/__keyword/article-card__keyword.css');
 @import url('../article-card/__delete/article-card__delete.css');
 @import url('../article-card/__date/article-card__date.css');
-@import url('../article-card/__link/article-card__link.css');
+@import url('../article-card/__source/article-card__source.css');
 @import url('../article-card/__text/article-card__text.css');
 @import url('../article-card/__title/article-card__title.css');
 @import url('../article-card/__main/article-card__main.css');

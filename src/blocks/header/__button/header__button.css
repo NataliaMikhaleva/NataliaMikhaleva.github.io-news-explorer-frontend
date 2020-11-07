@@ -1,3 +1,5 @@
+@import url(./_loggedIn/header__button_loggedIn.css);
+
 .button.header__button {
     width: 100%;
     margin-top: 22px;
@@ -30,4 +32,9 @@
   .button.header__button {
     width: 176px;
   }
+}
+
+.button.header__button:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }

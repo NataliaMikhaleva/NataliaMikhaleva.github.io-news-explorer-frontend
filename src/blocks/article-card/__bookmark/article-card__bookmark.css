@@ -1,5 +1,5 @@
 .article-card__bookmark {
-  background: url(../../../images/Rectangle\ 8.svg);
+  background: url(../../../images/bookmark.svg);
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -11,6 +11,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
+  z-index: 2;
 }
 
 .article-card__bookmark_active{
