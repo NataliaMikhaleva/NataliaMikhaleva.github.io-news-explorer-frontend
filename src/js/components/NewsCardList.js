@@ -1,25 +1,49 @@
 export default class NewsCardList {
-  constructor(container, sectionResults, loader, noResults, showMoreButton, newsApi, someForm, createNewArticle) {
+  constructor(container, someForm, sectionResults, loader, noResults, newsApi, createNewArticle) {
     this.container = container;
+    this.someForm = someForm;
     this.sectionResults = sectionResults;
     this.loader = loader;
     this.noResults = noResults;
-    this.showMoreButton = showMoreButton;
+
     this.newsApi = newsApi;
-    this.someForm = someForm;
+
     this.createNewArticle = createNewArticle;
 
     this.showMore = this.showMore.bind(this);
-  }
+    this.renderResults = this.renderResults.bind(this);
+    this.addCard = this.addCard.bind(this);
 
+  }
+// метод для отрисовки результатов при клике на кноку "искать"
   renderResults() {
     event.preventDefault();
-    this.newsApi.getNews(this.someForm.elements.keyword.value).then((res) => {
-      const newArticle = this.addCard(res.source, res.urlToImage, res.publishedAt, res.title, res.description, res.content);
-      this.container.appendChild(newCard);
+    this.loader.style.display = 'flex';
+    const keyword = this.someForm.keyword.value;
+    this.newsApi.getNews(keyword).then((res) => {
+      const articlesArray = res.articles;
+     console.log(articlesArray);
+     if(articlesArray.length === 0) {
+      this.noResults.style.display = 'flex';
+      this.loader.style.display = 'none';
+      return
+     }
+     this.noResults.style.display = 'none';
+      articlesArray.forEach((article) => {
+        const newarticle = this.addCard(article._id, article.url, article.urlToImage, article.publishedAt, article.title, article.description, article.source.name, keyword);
+        if(article.urlToImage === 'null') {
+          article.urlToImage = 'https://cdn.pixabay.com/photo/2020/11/14/17/50/night-sky-5742416_960_720.jpg';
+        }
+
+        this.container.appendChild(newarticle);
+
+      })
+      this.loader.style.display = 'none';
+      this.sectionResults.style.display = 'flex';
     })
     .catch((err) => {
-      console.log(err);
+      renderError(err);
+
     })
   }
 
@@ -27,15 +51,17 @@ export default class NewsCardList {
     this.sectionResults.appendChild(this.loader);
     this.loader.style.display = flex;
   }
-  renderError() {
-
+  // метод, показывающий пользователю пришедшие с бэка ошибки
+  renderError(err) {
+    alert(err.message);
   }
   showMore() {
+// кнопку находим через sectionResults
+  }
+  addCard(someId, someSourse, link, someDate, someTitle, someText, someContent, someKeyword) {
+    return this.createNewArticle(someId, someSourse, link, someDate, someTitle, someText, someContent, someKeyword) ;
+  }
 
-  }
-  addCard(someSourse, link, someDate, someTitle, someText,  someContent) {
-    return this.createNewArticle(someSourse, link, someDate, someTitle, someText,  someContent) ;
-  }
 
   eventListeners() {
     this.showMoreButton.addEventListener('click', this.showMore);

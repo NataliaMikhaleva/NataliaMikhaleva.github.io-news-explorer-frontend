@@ -5,8 +5,11 @@
   font-size: 16px;
   line-height: 22px;
   width: 90%;
-  margin: 10px auto 8px;
-  height: 110px;
+  margin-top: 10px;
+  margin: auto;
+  height: 88px;
+  word-wrap: break-word;
+  -webkit-line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
   color: black;

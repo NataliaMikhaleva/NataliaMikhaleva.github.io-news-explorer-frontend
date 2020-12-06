@@ -16,6 +16,9 @@
 
 .article-card__bookmark_active{
   background: url(../../../images/bookmark-active.svg);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .article-card__bookmark:hover {

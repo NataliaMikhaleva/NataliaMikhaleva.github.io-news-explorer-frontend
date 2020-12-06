@@ -1,0 +1,6 @@
+.header__bar1_change {
+  -webkit-transform: rotate(-45deg);
+  /* translate(-9px, 6px); */
+  transform: rotate(-45deg);
+   /* translate(-9px, 6px); */
+}

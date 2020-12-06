@@ -9,18 +9,21 @@ export default class MainApi {
       headers: {
         'Content-Type': 'application/json'
       },
+      // credentials: 'include',
       body: JSON.stringify({
         email: someEmail,
         password: somePassword,
         name: someName,
       })
+    })
       .then(res => {
         if(res.ok) {
           return res.json();
         }
-        return Promise.reject('Произошла ошибка');
+        //return Promise.reject('Произошла ошибка');
+        return json.then(Promise.reject.bind(Promise));
       })
-    })
+
   }
 
   signin(someEmail, somePassword) {
@@ -33,32 +36,45 @@ export default class MainApi {
         email: someEmail,
         password: somePassword,
       })
+    })
       .then(res => {
         if(res.ok) {
           return res.json();
         }
-        return Promise.reject('Произошла ошибка');
+        // return Promise.reject('Произошла ошибка');
+         return json.then(Promise.reject.bind(Promise))
       })
-    })
+      .then((data) => {
+        localStorage.setItem('token', data.token);
+      });
   }
 
   getUserData() {
-    return fetch (`${this.baseUrl}/users/me`)
+    return fetch (`${this.baseUrl}/users/me`, {
+      headers: {
+        authorization: `Bearer ${localStorage.getItem('token')}`,
+      }
+    })
     .then(res => {
       if(res.ok) {
         return res.json();
       }
-    return Promise.reject('Произошла ошибка');
+    // return Promise.reject('Произошла ошибка');
+    return json.then(Promise.reject.bind(Promise))
     })
   }
 
   getArticles () {
-    return fetch (`${this.baseUrl}/articles`)
+    return fetch (`${this.baseUrl}/articles`, {
+      headers: {
+        authorization: `Bearer ${localStorage.getItem('token')}`,
+      }
+    })
     .then(res => {
       if(res.ok) {
         return res.json();
       }
-    return Promise.reject('Произошла ошибка');
+    return json.then(Promise.reject.bind(Promise))
     })
   }
 
@@ -66,7 +82,7 @@ export default class MainApi {
     return fetch (`${this.baseUrl}/articles`, {
       method: 'POST',
       headers: {
-        // authorization: '5f964995-7da7-4204-b259-11a4aa038056',
+        authorization: `Bearer ${localStorage.getItem('token')}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
@@ -78,20 +94,21 @@ export default class MainApi {
         link: someLink,
         image: someImage
       })
+    })
       .then(res => {
         if(res.ok) {
           return res.json();
         }
-        return Promise.reject('Произошла ошибка');
+        return json.then(Promise.reject.bind(Promise))
       })
-    })
+
   }
 
   removeArticle(articleId) {
-    return fetch(`${this.baseUrl}/cards/${articleId}`, {
+    return fetch(`${this.baseUrl}/articles/${articleId}`, {
       method: 'DELETE',
       headers: {
-        // authorization: '5f964995-7da7-4204-b259-11a4aa038056',
+        authorization: `Bearer ${localStorage.getItem('token')}`,
         'Content-Type': 'application/json'
       }
     })
@@ -99,7 +116,7 @@ export default class MainApi {
       if(res.ok) {
         return res.json();
     }
-    return Promise.reject('Произошла ошибка');
+    return json.then(Promise.reject.bind(Promise))
     })
   }
 }

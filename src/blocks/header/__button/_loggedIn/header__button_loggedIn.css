@@ -1,9 +1,22 @@
 
+ .button.header__button.header__button_loggedIn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+ }
+
+
+
 @media screen and (min-width: 767px) {
   .button.header__button.header__button_loggedIn {
     border: 1px solid #D1D2D6;
     box-sizing: border-box;
     width: 100px;
     height: 40px;
+    display: flex;
+    flex-direction: row;
+    
+     vertical-align: middle;
   }
 }

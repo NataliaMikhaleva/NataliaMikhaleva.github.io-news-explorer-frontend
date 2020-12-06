@@ -7,7 +7,10 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: { main: './src/index.js' },
+  entry: {
+     main: './src/index.js',
+     articles: './src/saved-articles/articles.js'
+    },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js'
@@ -46,20 +49,26 @@ module: {
         filename: '[name].[contenthash].css',
     }),
     new HtmlWebpackPlugin({
-      inject: false,
+      //inject: false,
+      inject: true,
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+
+      chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
-      inject: false,
+      //inject: false,
+      inject: true,
       template: './src/articles.html',
-      filename: 'articles.html'
+      filename: 'articles.html',
+
+      chunks: ['articles'],
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),
       cssProcessorPluginOptions: {
-              preset: ['default'],
+      preset: ['default'],
       },
       canPrint: true
   }),

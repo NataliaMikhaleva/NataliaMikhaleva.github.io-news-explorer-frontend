@@ -7,3 +7,9 @@
   background-color: #2F71E5;
   color: white;
 }
+
+.button:active,
+.button:hover,
+.button:focus {
+outline: none;
+}

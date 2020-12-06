@@ -7,14 +7,19 @@
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: #B6BCBF;
-    margin-top: 0;
+    /* margin-top: 0; */
     margin-left: 16px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
+    padding-bottom: 16px;
     cursor: pointer;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 1024px) {
   .article-card__source{
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
+    padding-bottom: 24px;
+    margin-bottom: 0;
   }
 }
