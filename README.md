@@ -4,5 +4,4 @@
 2. Для развертывания проекта необходимо:
 - скачать репозиторий и распаковать его у себя на компьютере;
 - открыть его через bash и ввести команды npm i, а затем - npm run dev - страница откроется в браузере;
-3. План по доработке: дописать JS-код, чтобы сделать функционал полностью работающим.
-4. Ссылка на GitHub Pages: https://nataliamikhaleva.github.io/NataliaMikhaleva.github.io-news-explorer-frontend/
+3. Ссылка на GitHub Pages: https://nataliamikhaleva.github.io/NataliaMikhaleva.github.io-news-explorer-frontend/
