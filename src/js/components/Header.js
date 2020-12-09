@@ -24,7 +24,6 @@ export default class Header {
       const headerButtonName = this.headerLoggedIn.querySelector('.header__button_name');
       //headerButtonLoggedIn.textContent = props.userName; //`<img class= 'header__button_image' src= '<%=require('./images/Exit.svg')%>' alt= 'кнопка выхода'>`;
       headerButtonName.textContent = props.userName;
-      console.log(props.userName);
       return
     }
      else {
@@ -93,19 +92,19 @@ export default class Header {
   // метод, отвечающий за рендеринг мобильного меню
   setMobileMenu() {
     this.header.forEach(elem => {
-      const headerIcon = elem.querySelectorAll('.header__icon');
-      const headerNav = elem.querySelectorAll('.header__nav');
-      headerIcon.forEach((elem) => {
-        const bar1 = elem.querySelectorAll('.header__bar1');
-        const bar2 = elem.querySelectorAll('.header__bar2');
-        bar1.forEach((elem) => {
+      const headerIcons = elem.querySelectorAll('.header__icon');
+      const headerNavs = elem.querySelectorAll('.header__nav');
+      headerIcons.forEach((elem) => {
+        const bars1 = elem.querySelectorAll('.header__bar1');
+        const bars2 = elem.querySelectorAll('.header__bar2');
+        bars1.forEach((elem) => {
           elem.classList.toggle('header__bar1_change');
         });
-        bar2.forEach((elem) => {
+        bars2.forEach((elem) => {
           elem.classList.toggle('header__bar2_change');
         });
       })
-      headerNav.forEach((elem) => {
+      headerNavs.forEach((elem) => {
         elem.classList.toggle('header__nav_opened');
       })
       elem.classList.toggle('header_theme_dark');

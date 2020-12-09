@@ -15,6 +15,7 @@ const header = document.querySelector('.header');
 const headerButton = document.querySelector('.header__button');
 const leadContentSubtitle = document.querySelector('.lead__content-subtitle');
 const leadText = document.querySelector('.lead__text');
+const headerIcon = document.querySelector('.header__icon');
 
 //константы, которые потом нужно будет куда-то перенести
 const MAINAPI_URL = NODE_ENV === 'production' ? 'https://newsexplorer.gq' : 'http://localhost:3000';
@@ -49,3 +50,4 @@ articlesInfo.getKeywords();
 
 // вешаем слушатели
 headerButton.addEventListener('click', savedArticlesHeader.userExit);
+headerIcon.addEventListener('click', savedArticlesHeader.setMobileMenu);

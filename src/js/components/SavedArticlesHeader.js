@@ -11,7 +11,6 @@ export default class SavedArticlesHeader extends Header {
 
       const headerButtonName = this.header.querySelector('.header__button_name');
       headerButtonName.textContent = props.userName;
-      console.log(props.userName);
       return
     }
      else {
@@ -44,6 +43,26 @@ export default class SavedArticlesHeader extends Header {
    userExit() {
     localStorage.removeItem('token');
     window.location.href = './index.html';
-    document.location.reload();
+    //document.location.reload();
+  }
+  // метод отрисовки мобильного меню на странице "сохраненные статьи"
+  setMobileMenu() {
+    const headerIcon = this.header.querySelector('.header__icon');
+    const headerNav = this.header.querySelector('.header__nav');
+
+    const bar1 = headerIcon.querySelector('.header__bar1');
+    const bar2 = headerIcon.querySelector('.header__bar2');
+
+    const headerSubtitle = this.header.querySelector('.header__subtitle');
+
+    bar1.classList.toggle('header__bar1_change');
+    bar1.classList.toggle('header__bar1_theme_white');
+    bar2.classList.toggle('header__bar2_change');
+    bar2.classList.toggle('header__bar2_theme_white');
+    headerNav.classList.toggle('header__nav_opened');
+    headerNav.classList.toggle('header_theme_dark');
+    headerSubtitle.classList.toggle('header__subtitle_theme_white');
+    this.header.classList.toggle('header_theme_dark');
+
   }
 }

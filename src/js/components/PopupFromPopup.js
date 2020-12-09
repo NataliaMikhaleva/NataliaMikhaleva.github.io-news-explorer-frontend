@@ -6,10 +6,13 @@ export default class PopupFromPopup extends Popup {
     this.somePopupToClose = somePopupToClose;
 
     this.open = this.open.bind(this);
+
+    this.someButton = this.somePopup.querySelector('.popup__button');
   }
 
   open() {
-    this.errorMessage.textContent = '';
+    this.errorMessages.textContent = '';
+    this.someButton.setAttribute('disabled', 'disabled');
     this.somePopup.classList.add('popup_is_opened');
     if(!this.somePopupToClose.classList.contains('popup_reg_success')) {
       this.somePopupToClose.querySelector('.popup__form').reset();

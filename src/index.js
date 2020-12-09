@@ -14,12 +14,14 @@ import PopupFromPopup from './js/components/PopupFromPopup.js';
 
 // кнопки
 const headerButton = document.querySelector('.header__button');
-const headerIcon = document.querySelectorAll('.header__icon');
+const headerIcons = document.querySelectorAll('.header__icon');
 const leadButton = document.querySelector('.lead__button');
 const popupButtonReg = document.querySelector('.popup__button_reg');
 const popupButtonEntrance = document.querySelector('.popup__button_entrance');
 const headerButtonLoggedIn = document.querySelector('.header__button_loggedIn');
 const articleCardBookmark = document.querySelector('.article-card__bookmark');
+const searchResultsButton = document.querySelector('.search-results__button');
+
 
 //спаны для входа в попапы входа и авторизации
 const popupAccent = document.querySelector('.popup__accent');
@@ -149,8 +151,9 @@ registrationForm.setEventListeners();
 authorization.addEventListener('submit', header.updateHeaderAuth);
 searchNews.addEventListener('submit', newsCardList.renderResults);
 headerButtonLoggedIn.addEventListener('click', header.userExit);
-headerIcon.forEach((elem) => {
+headerIcons.forEach((elem) => {
   elem.addEventListener('click', header.setMobileMenu);
 })
+searchResultsButton.addEventListener('click', newsCardList.showMore);
 
 //articleCardBookmark.addEventListener('click', savedCards.saveCard);

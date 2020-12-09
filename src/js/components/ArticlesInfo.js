@@ -60,10 +60,7 @@ export default class ArticlesInfo {
       return
     }
     else {
-      console.log(arr.length);
-      console.log(arr[arr.length]);
       leadKeywordFirst.textContent = arr[arr.length-1];
-      console.log(leadKeywordFirst.textContent);
       leadKeywordSecond.textContent = arr[arr.length-2];
       leadInt.textContent = arr.length-2;
       return

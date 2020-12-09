@@ -12,14 +12,16 @@ export default class Popup {
     this.setContent = this.setContent.bind(this);
 
 
-    this.errorMessage = this.somePopup.querySelectorAll('.error-message');
+    this.errorMessages = this.somePopup.querySelectorAll('.error-message');
+    this.someButton = this.somePopup.querySelector('.popup__button');
 
   }
   // метод, открывающий попап
   open() {
-    this.errorMessage.forEach(element => {
+    this.errorMessages.forEach(element => {
       element.textContent = ''
     });
+    this.someButton.setAttribute('disabled', 'disabled');
     this.somePopup.classList.add('popup_is_opened');
 
   }
@@ -27,7 +29,7 @@ export default class Popup {
   close() {
     this.somePopup.querySelector('.popup__form').reset();
     this.somePopup.classList.remove('popup_is_opened');
-    this.errorMessage.forEach(element => {
+    this.errorMessages.forEach(element => {
       element.textContent = ''
     });
   }

@@ -24,7 +24,7 @@ export default class NewsCard {
     <p class='article-card__text'>${someText}</p>
     <p class='article-card__source'>${someContent}</p>
   </div>`;
-    let element = document.createElement('div');
+    const element = document.createElement('div');
     element.insertAdjacentHTML('beforeend', templateString.trim());
 
     this.cardElementSaved = element.firstChild;
@@ -46,7 +46,7 @@ export default class NewsCard {
     <p class='article-card__text'>${someText}</p>
     <p class='article-card__source'>${someContent}</p>
   </div>`;
-    let element = document.createElement('div');
+    const element = document.createElement('div');
     element.insertAdjacentHTML('beforeend', templateString.trim());
 
     this.cardElement = element.firstChild;
@@ -75,7 +75,7 @@ export default class NewsCard {
         card.querySelector('.article-card__bookmark').classList.add('article-card__bookmark_active');
       })
       .catch((err) => {
-        alert(errorMessage);
+        alert(err.message);
       });
     }
 
@@ -93,12 +93,11 @@ setEventListenersForSavedArticle() {
   _remove() {
     if(window.confirm("Вы действительно хотите удалить эту заметку?")) {
       const article = event.target.closest('.article-card');
-      console.log(article.id);
       this.mainApi.removeArticle(article.id).then(() => {
         this.container.removeChild(article);
       })
-      .catch((errorMessage) => {
-        alert(errorMessage);
+      .catch((err) => {
+        alert(err.message);
       })
     }
   }

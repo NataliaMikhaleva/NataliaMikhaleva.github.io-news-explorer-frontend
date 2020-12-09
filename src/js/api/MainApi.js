@@ -20,7 +20,8 @@ export default class MainApi {
         if(res.ok) {
           return res.json();
         }
-        //return Promise.reject('Произошла ошибка');
+        //return Promise.reject(err.json());
+        const json = res.json();
         return json.then(Promise.reject.bind(Promise));
       })
 
@@ -41,8 +42,12 @@ export default class MainApi {
         if(res.ok) {
           return res.json();
         }
-        // return Promise.reject('Произошла ошибка');
-         return json.then(Promise.reject.bind(Promise))
+        // console.log(Promise);
+        // return Promise.reject(message);
+         const json = res.json();
+         return json.then(Promise.reject.bind(Promise));
+        //  console.log(err);
+        //  return Promise.reject(err.json());
       })
       .then((data) => {
         localStorage.setItem('token', data.token);
@@ -60,6 +65,7 @@ export default class MainApi {
         return res.json();
       }
     // return Promise.reject('Произошла ошибка');
+    const json = res.json();
     return json.then(Promise.reject.bind(Promise))
     })
   }
@@ -74,7 +80,8 @@ export default class MainApi {
       if(res.ok) {
         return res.json();
       }
-    return json.then(Promise.reject.bind(Promise))
+      const json = res.json();
+      return json.then(Promise.reject.bind(Promise))
     })
   }
 
@@ -99,6 +106,7 @@ export default class MainApi {
         if(res.ok) {
           return res.json();
         }
+        const json = res.json();
         return json.then(Promise.reject.bind(Promise))
       })
 
@@ -116,6 +124,7 @@ export default class MainApi {
       if(res.ok) {
         return res.json();
     }
+    const json = res.json();
     return json.then(Promise.reject.bind(Promise))
     })
   }
