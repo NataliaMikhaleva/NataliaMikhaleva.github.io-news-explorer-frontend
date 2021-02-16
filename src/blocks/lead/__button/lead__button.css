@@ -19,7 +19,8 @@
     width: 160px;
     height: 56px;
     margin-top: 0;
-    right: 156px;
+    right: 0;
+    
     padding: 0;
   }
 }
@@ -28,6 +29,6 @@
 
 @media screen and (min-width: 1440px) {
   .button.lead__button {
-    right: 400px;
+    /* right: 400px; */
   }
 }

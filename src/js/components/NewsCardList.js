@@ -41,7 +41,7 @@ export default class NewsCardList {
         month = 'Января'
         break;
       case '02':
-        month = 'Февраоя'
+        month = 'Февраля'
         break;
       case '03':
         month = 'Марта'

@@ -68,7 +68,7 @@ const noRezults = document.querySelector('.no-results');
 
 //константы
 const NEWSAPI_URL = NODE_ENV === 'production' ? 'https://nomoreparties.co/news' : 'http://newsapi.org';
-const MAINAPI_URL = NODE_ENV === 'production' ? 'https://newsexplorer.gq' : 'http://localhost:3000';
+const MAINAPI_URL = NODE_ENV === 'production' ? 'https://newsexplorer.ru.com' : 'http://localhost:3000';
 
 // объект для передачи классу NewsApi
 const newsOptions = {
