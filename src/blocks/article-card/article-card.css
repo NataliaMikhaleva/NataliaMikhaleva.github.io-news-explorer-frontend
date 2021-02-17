@@ -1,0 +1,46 @@
+@import url('../article-card/__image/article-card__image.css');
+@import url('../article-card/__link/article-card__link.css');
+@import url('../article-card/__bookmark/article-card__bookmark.css');
+@import url('../article-card/__notLoggedIn/article-card__notLoggedIn.css');
+@import url('../article-card/__keyword/article-card__keyword.css');
+@import url('../article-card/__delete/article-card__delete.css');
+@import url('../article-card/__date/article-card__date.css');
+@import url('../article-card/__source/article-card__source.css');
+@import url('../article-card/__text/article-card__text.css');
+@import url('../article-card/__title/article-card__title.css');
+@import url('../article-card/__main/article-card__main.css');
+@import url('../article-card/__buttons/article-card__buttons.css');
+@import url('../article-card/__delete-buttons/article-card__delete-buttons.css');
+@import url('../article-card/__delete-info/article-card__delete-info.css');
+
+.article-card {
+    width: 90%;
+    height: 440px;
+    margin: auto;
+    margin-bottom: 10px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    text-decoration-line: none;
+    position: relative;
+}
+
+@media screen and (min-width: 425px) {
+  .article-card {
+    width: calc(100% - 4px);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .article-card {
+    height: 420px;
+    margin: 0;
+    width: calc(100% - 4px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article-card {
+    width: calc(100% - 8px);
+    height: 576px;
+  }
+}

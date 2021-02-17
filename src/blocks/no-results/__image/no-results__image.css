@@ -1,0 +1,9 @@
+.no-results__image {
+  background: url(../../../images/not-found_v1.svg);
+  display: block;
+	width: 74px;
+	height: 74px;
+  background-repeat: no-repeat;
+  margin: 86px auto 24px;
+  /* padding-top: 86px; */
+}

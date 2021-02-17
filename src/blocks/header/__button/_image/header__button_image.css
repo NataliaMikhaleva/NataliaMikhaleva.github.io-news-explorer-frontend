@@ -1,0 +1,12 @@
+.header__button_image {
+  padding-top: 20px;
+  padding-left: 8px;
+}
+
+@media screen and (min-width: 767px) {
+  .header__button_image {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 8px;
+  }
+}

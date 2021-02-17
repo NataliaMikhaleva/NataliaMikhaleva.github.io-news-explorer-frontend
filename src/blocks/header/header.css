@@ -1,0 +1,40 @@
+@import url('./__subtitle/header__subtitle.css');
+@import url('./_notLoggedIn/header_notLoggedIn.css');
+@import url('./_loggedIn/header_loggedIn.css');
+@import url('./_is_closed/header_is_closed.css');
+@import url('./_is_opened/header_is_opened.css');
+@import url(./__subtitle/_theme/header__subtitle_theme_white.css);
+@import url(./__content/header__content.css);
+@import url('./__icon/header__icon.css');
+@import url('./__bar1/header__bar1.css');
+@import url('./__bar1/_theme/header__bar1_theme_white.css');
+@import url('./__bar1/_change/header__bar1_change.css');
+@import url('./__bar2/header__bar2.css');
+@import url('./__bar2/_change/header__bar2_change.css');
+@import url('./__bar2/_theme/header__bar2_theme_white.css');
+@import url('./_theme/header_theme_dark.css');
+@import url('./__heading/header__heading.css');
+@import url('./__button/header__button.css');
+@import url('./__button/_name/header__button_name.css');
+@import url('./__button/_image/header__button_image.css');
+@import url('./__button/_theme/header__button_theme_white.css');
+@import url('./__nav/header__nav.css');
+@import url('./__nav/_theme/header__nav_theme_white.css');
+@import url('./__nav/_opened/header__nav_opened.css');
+@import url('./__link/header__link.css');
+@import url('./__link/_theme/header__link_theme_white.css');
+
+.header {
+    min-height: 56px;
+    width: 100%;
+    margin: auto;
+
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    min-height: 66px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  }
+}

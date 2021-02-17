@@ -1,0 +1,8 @@
+@media screen and (min-width: 767px){
+  .author__content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+

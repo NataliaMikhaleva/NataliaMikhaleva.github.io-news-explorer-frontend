@@ -1,0 +1,32 @@
+.article-card__title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  width: 90%;
+  height: 52px;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: auto;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  line-clamp: 3;
+}
+
+@media screen and (min-width: 768px) {
+  .article-card__title {
+    height: 72px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .article-card__title {
+    height: 60px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+}

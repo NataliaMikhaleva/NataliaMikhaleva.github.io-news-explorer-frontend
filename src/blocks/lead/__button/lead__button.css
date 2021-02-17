@@ -1,0 +1,34 @@
+.button.lead__button:hover {
+  background-color: #347EFF;
+  cursor: pointer;
+}
+
+.button.lead__button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+@media screen and (min-width: 767px) {
+  .button.lead__button {
+    position: absolute;
+    z-index: 1;
+    width: 160px;
+    height: 56px;
+    margin-top: 0;
+    right: 0;
+    
+    padding: 0;
+  }
+}
+
+
+
+@media screen and (min-width: 1440px) {
+  .button.lead__button {
+    /* right: 400px; */
+  }
+}

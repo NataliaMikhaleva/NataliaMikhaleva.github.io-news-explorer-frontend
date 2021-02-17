@@ -1,0 +1,22 @@
+.author__info {
+  margin-top: 16px;
+  padding-bottom: 80px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 767px) {
+  .author__info {
+
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .author__info {
+    margin-top: 24px;
+    padding-bottom: 279px;
+  }
+}

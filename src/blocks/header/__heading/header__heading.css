@@ -1,0 +1,16 @@
+.header__heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  .header__heading {
+    width: 200px;
+    /* margin-left: 40px; */
+    border-bottom: none;
+  }
+}

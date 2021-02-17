@@ -1,0 +1,9 @@
+.popup__accent {
+  color: #2F71E5;
+  cursor: pointer;
+}
+
+
+.popup__accent:hover {
+  opacity: .9;
+}

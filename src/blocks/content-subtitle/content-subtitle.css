@@ -1,0 +1,17 @@
+.content-subtitle {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  color: #1A1B22;
+  width: 90%;
+  padding-top: 32px;
+  background: #FFFFFF;
+}
+
+@media screen and (min-width: 767px) {
+  .content-subtitle {
+  padding-top: 40px;
+}
+}

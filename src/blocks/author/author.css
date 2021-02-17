@@ -1,0 +1,16 @@
+@import url('../author/__photo/author__photo.css');
+@import url('../author/__title/author__title.css');
+@import url('../author/__info/author__info.css');
+@import url('../author/__content/author__content.css');
+
+.author {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 767px) {
+  .author {
+    display: flex;
+    justify-content: space-between;
+  }
+}

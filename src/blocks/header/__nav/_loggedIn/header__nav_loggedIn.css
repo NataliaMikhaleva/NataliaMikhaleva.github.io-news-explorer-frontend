@@ -1,0 +1,9 @@
+.header__nav_loggedIn {
+  /* display: none; */
+}
+
+@media screen and (min-width: 767px) {
+  .header__nav.header__nav_loggedIn {
+    width: 52%;
+  }
+}

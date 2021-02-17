@@ -1,0 +1,19 @@
+.article-card__keyword {
+  min-width: 72px;
+  min-height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .article-card__keyword {
+    top: 24px;
+    right: 24px;
+  }
+
+}

@@ -1,0 +1,15 @@
+.button {
+  width: 100%;
+  border: 0;
+  height: 56px;
+  border-radius: 100px;
+  margin-top: 16px;
+  background-color: #2F71E5;
+  color: white;
+}
+
+.button:active,
+.button:hover,
+.button:focus {
+outline: none;
+}

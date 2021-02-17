@@ -1,0 +1,22 @@
+.content-paragraph {
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 767px) {
+  .content-paragraph {
+    width: 452px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content-paragraph {
+    width: 545px;
+  }
+}
